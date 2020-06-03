@@ -1,0 +1,252 @@
+<nav class="navbar row sticky-top navbar-expand-lg navbar-light bg-light">
+  <a class="col-md-4 navbar-brand"><img src="assets/Loghyo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav col-md-5">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Shop</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Blog</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav space">
+      <li class="nav-item active">
+        <img class="space" src="assets/search.png">
+      </li>
+      <li class="nav-item">
+        <img class="space" src="assets/like.png">
+      </li>
+      <li class="nav-item">
+        <img class="space" src="assets/login.png">
+      </li>
+      <li class="nav-item">
+        <img class="space" src="assets/cart.png">
+      </li>
+    </ul>
+  </div>
+</nav>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img [src]="jsonCollection.bannerImage[0].imageSrc" class="d-block w-100" alt="jsonCollection.bannerImage[0].alt">
+    </div>
+    <div class="carousel-item">
+      <img [src]="jsonCollection.bannerImage[1].imageSrc" class="d-block w-100" alt="jsonCollection.bannerImage[1].alt">
+    </div>
+    <div class="carousel-item">
+      <img [src]="jsonCollection.bannerImage[2].imageSrc" class="d-block w-100" alt="jsonCollection.bannerImage[2].alt">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="container">
+  <div class="car-footer-title title-tags">FEATURED PRODUCTS</div>
+  <owl-carousel-o [options]="customOptionsForcarousel1">
+    <div *ngFor="let slides of jsonCollection.carousel1; let i = index">
+      <ng-template carouselSlide [id]="i">
+        <div class="card-group" style="min-width: 180px;">
+          <div class="card overlayImage">
+            <img class="card-img-top imgSize" [src]="slides.imageSrc" alt="Card image cap">
+            <div class="overlay">
+              <div class="text">View All</div>
+            </div>
+            <div class="card-footer card-footer-text">
+              <div class="car-footer-title">{{slides.type | uppercase }}</div>
+              <small class="text-muted">{{slides.itemCount}} Items</small>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </div>
+  </owl-carousel-o>
+
+<br>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card" style="margin-right: 35px;  max-height: 250px;">
+        <div class="card-header">
+          <span class="car-footer-title font-size-inc">
+            {{jsonCollection.normalCard[0].text}}
+          </span>
+          <span style="margin: 20px;padding-bottom: 20px;">
+            <button class="btn btn-primary">View More</button>
+          </span>
+          <img class="card-img-top" height="150px" width="300px" [src]="jsonCollection.normalCard[0].imageSrc"
+            alt="Card image cap">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card" style="max-width: 250px; margin-right: 35px;">
+        <img class="card-img-top" height="150px" width="300px" [src]="jsonCollection.normalCard[1].imageSrc" alt="Card image cap">
+        <div class="card-footer card-footer-text">
+          <div class="car-footer-title">
+            {{jsonCollection.normalCard[1].type | uppercase }}</div>
+          <small class="text-muted">{{jsonCollection.normalCard[1].itemCount}} Items</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card" style="max-width: 250px; margin-right: 35px;">
+        <img class="card-img-top " height="150px" width="300px"[src]="jsonCollection.normalCard[2].imageSrc" alt="Card image cap">
+        <div class="card-footer card-footer-text">
+          <div class="car-footer-title">
+            {{jsonCollection.normalCard[2].type | uppercase }}</div>
+          <small class="text-muted">{{jsonCollection.normalCard[2].itemCount}} Items</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+  </ul>
+
+  <owl-carousel-o [options]="watchCarousel">
+    <div *ngFor="let slides of jsonCollection.watch; let i = index">
+      <ng-template carouselSlide [id]="i">
+        <div class="card-group" style="min-width: 180px;">
+          <div class="card overlayImage">
+            <img class="card-img-top imgSize" [src]="slides.imageSrc" alt="Card image cap">
+            <div class="overlay">
+              <div class="text">
+                <a> <img class="space" src="assets/search.png"></a>
+                <a> <img class="space" src="assets/like.png"></a>
+                <a><img class="space" src="assets/cart.png"></a>
+                
+              </div>
+            </div>
+            <div class="card-footer card-footer-text">
+              <div class="car-footer-title">{{slides.text | uppercase }}</div>
+              <small class="text-muted">{{slides.price}} Items</small>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </div>
+  </owl-carousel-o>
+  <div class="car-footer-title title-tags">LATEST BLOG POST</div>
+  <owl-carousel-o [options]="customOptions">
+    <div *ngFor="let slides of jsonCollection.blogPost; let i = index">
+      <ng-template carouselSlide [id]="i">
+        <div class="card-group" style="min-width: 180px;">
+          <div class="card">
+            <img class="card-img-top imgSize" [src]="slides.imageSrc" alt="Card image cap">
+            <div class="card-footer" style="background-color:white">
+              <div class="car-footer-title">{{slides.title | uppercase }}</div>
+              <small class="text-muted">{{slides.dateTime}} | By {{slides.role}}</small>
+              <div style="color: rgb(219, 213, 213);">
+                {{slides.Description}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </div>
+  </owl-carousel-o>
+
+  <div>SHOP BY BRANDS</div>
+  <owl-carousel-o [options]="brandCarousel">
+ 
+    <div *ngFor="let slide of jsonCollection.brandImages;let i = index">
+      <ng-template carouselSlide [id]="i">
+        <img height="90px" width="60px" [src]="slide.imageSrc" [alt]="slide.alt">
+      </ng-template>
+    </div>
+ 
+  </owl-carousel-o>
+</div>
+<div class="card-footer-text greyBackround">
+  <h4 style="padding-top: 50px;">SUBSCRIBE FOR MORE INFO</h4>
+  <h6 style="color: rgb(219, 213, 213);">Subscribe to bazar email listing to receive updates on new product arrival</h6>
+  <div>
+    <input type="email" style="margin-right: 20px;" placeholder="Enter email">
+    <button class="btn btn-primary" >Subscribe</button>
+  </div>
+</div>
+<footer class="footer-bg-color">
+  <div class="row font-color">
+    <div class="col-md-3">
+      
+      </div>
+      <div class="col-md-3 ">
+        <h2>Bazar</h2>
+        <p>
+          Bazar you can purchase large variety of products at lowest rice
+        </p>
+        <img src="assets/marker.png">  20, T. Nagar, Chennai.  <br>
+        <img src="assets/mail.png"> bazar@gmail.com<br>
+        <img src="assets/phone.png"> 8098837709
+        </div>
+        <div class="col-md-3">
+          INFORMATIONS
+          <ul style="list-style: none; padding-inline-start: 0px;">
+            <li>About us</li>
+            <li>Contact us </li>
+            <li>Terms and conditions </li>
+            <li>FAQ </li>
+            <li>Shopping Guide </li>
+           </ul>
+          </div>
+          <div class="col-md-3">
+            USEFUL LINKS
+            <ul style="list-style: none; padding-inline-start: 0px;">
+              <li>Online Store</li>
+              <li>Customer Brands</li>
+              <li>Home </li>
+              <li>Purchase </li>
+              <li>Important links </li>
+             </ul>
+            </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-3" style="color: white;">
+          <p>@ 2018<a style="color: blue;">Bazar</a> All Rights Reserved</p>
+        </div>
+        <div class="col-md-3">
+          <img src="assets/payment.png">
+        </div>
+        <div class="col-md-3">
+            <img src="assets/Facebook.png">
+            <img src="assets/Twitter.png">
+            <img src="assets/Dribbble.png">
+            <img src="assets/Behance.png">
+            <img src="assets/Pinterest.png">
+        </div>
+      </div>
+
+</footer>
+
+<router-outlet></router-outlet>

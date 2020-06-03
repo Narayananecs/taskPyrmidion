@@ -1,0 +1,78 @@
+{
+    "bannerImage" : [
+        {"imageSrc":"assets/banner1.jpeg","alt":"Banner 1 Watch"},
+        {"imageSrc":"assets/banner2.jpeg","alt":"Banner 2 Bags"},
+        {"imageSrc":"assets/banner3.jpg","alt":"Banner 3 clothing"}
+    ],
+
+    "carousel1" : [
+        {"imageSrc":"assets/Image.png","type" : "Shoes", "itemCount":25},
+        {"imageSrc":"assets/qwsd.png","type" : "Watchs", "itemCount":25},
+        {"imageSrc":"assets/bags.png","type" : "Bags", "itemCount":25},
+        {"imageSrc":"assets/Men.png","type" : "Mens cloths", "itemCount":25},
+        {"imageSrc":"assets/women.png","type" : "Womens cloths", "itemCount":25},
+        {"imageSrc":"assets/Watch.png","type" : "Watch", "itemCount":25},
+        {"imageSrc":"assets/Image1.png","type" : "Light", "itemCount":25},
+        {"imageSrc":"assets/Image6.png","type" : "Bags", "itemCount":25}
+    ],
+
+    "normalCard" : [
+        {"text" : "Best price for this month", "imageSrc": "assets/Rectangle 201.png" },
+        {"imageSrc":"assets/Image6.png","type" : "Bags", "itemCount":25},
+        {"imageSrc":"assets/Image7.png","type" : "Bags", "itemCount":25}
+    ],
+
+    "blogPost" : [
+        {"title" : "Good Collections", "dateTime" : "25 Mar 20", 
+            "role":"User", "Description" : "Good quality of dresses are here. We can broswe throught the collections to buy",
+            "imageSrc":"assets/Image7.png",
+            "alt":"Bags"},
+        {"title" : "Lowest price", "dateTime" : "25 Mar 20", 
+            "role":"User", "Description" : "Good quality of dresses are here. We can broswe throught the collections to buy",
+            "imageSrc":"assets/Image1.png",
+            "alt":"Bags"},
+        {"title" : "High Quality", "dateTime" : "25 Mar 20", 
+            "role":"User", "Description" : "Good quality of dresses are here. We can broswe throught the collections to buy",
+            "imageSrc":"assets/Image-1.png",
+            "alt":"Bags"},
+        {"title" : "One Stop Purchase Point", "dateTime" : "25 Mar 20", 
+            "role":"User", "Description" : "Good quality of dresses are here. We can broswe throught the collections to buy",
+            "imageSrc":"assets/Image3.png",
+            "alt":"Bags"},
+        {"title" : "Affordable Price", "dateTime" : "25 Mar 20", 
+                "role":"User", "Description" : "Good quality of dresses are here. We can broswe throught the collections to buy",
+                "imageSrc":"assets/Image4.png",
+                "alt":"Bags"},
+        {"title" : "Variety of Collections", "dateTime" : "25 Mar 20", 
+            "role":"User", "Description" : "Good quality of dresses are here. We can broswe throught the collections to buy",
+            "imageSrc":"assets/Image5.png",
+            "alt":"Bags"}
+       
+    ],
+
+    "brandImages" : [
+        {"imageSrc":"assets/brand-1.png","alt" : "brand1"},
+        {"imageSrc":"assets/brand-2.png","alt" : "brand2"},
+        {"imageSrc":"assets/brand-3 (1).png","alt" : "brand3"},
+        {"imageSrc":"assets/brand-4.png","alt" : "brand4"},
+        {"imageSrc":"assets/brand-4.png","alt" : "brand4"},
+        {"imageSrc":"assets/brand-6.png","alt" : "brand6"},
+        {"imageSrc":"assets/brand-1.png","alt" : "brand1"},
+        {"imageSrc":"assets/brand-2.png","alt" : "brand2"}
+    ],
+
+    "watch" : [
+        {"imageSrc" : "assets/Watch.png","text":"Smart watch","price":58.9 },
+        {"imageSrc" : "assets/qwsd.png","text":"Smart watch","price":53.9 },
+        {"imageSrc" : "assets/Image3.png","text":"Smart watch","price":52.9 },
+        {"imageSrc" : "assets/Image4.png","text":"Smart watch","price":54.9 },
+        {"imageSrc" : "assets/Image5.png","text":"Smart watch","price":587.9 },
+        {"imageSrc" : "assets/qwsd.png","text":"Smart watch","price":56.9 },
+        {"imageSrc" : "assets/Image1.png","text":"Smart watch","price":18.9 },
+        {"imageSrc" : "assets/Watch.png","text":"Smart watch","price":48.9 },
+        {"imageSrc" : "assets/Watch.png","text":"Smart watch","price":9 }
+    ]
+
+
+
+}

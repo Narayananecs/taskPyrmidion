@@ -1,0 +1,67 @@
+.imgSize {
+    height: 180px;
+    width: 176px;
+}
+
+.card-footer-text {
+    text-align: center;
+}
+
+.car-footer-title {
+    font-weight: bold;
+}
+
+.greyBackround {
+    background-color: #f4f4f6;
+}
+
+.font-size-inc {
+    font-size: 22px;
+}
+
+.footer-bg-color{
+    background-color: rgba(0, 0, 27, 0.849);
+    padding-top: 25px;
+}
+
+.title-tags {
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.font-color{
+    color: rgb(219, 213, 213);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:rgb(36, 36, 80);
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .overlayImage:hover .overlay {
+    opacity: 1;
+  }
+
+  .space {
+      margin-right: 10px;
+  }
