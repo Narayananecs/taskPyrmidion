@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
     dots: false,
     margin:100,
     navSpeed: 700,
-    navText: ['', ''],
+    navText: ['prev', 'next'],
     responsive: {
       0: {
         items: 1
@@ -67,7 +67,7 @@ export class AppComponent implements OnInit {
     dots: false,
     margin:20,
     navSpeed: 700,
-    navText: ['', ''],
+    navText: ['prev', 'next'],
     responsive: {
       0: {
         items: 1
@@ -93,7 +93,7 @@ export class AppComponent implements OnInit {
       pullDrag: false,
       dots: false,
       navSpeed: 700,
-      navText: ['next', 'prev'],
+      navText: ['prev', 'next'],
       margin:20,
       responsive: {
         0: {
